@@ -39,7 +39,7 @@ class BaseFragment : Fragment() {
 
         val textWatcher = object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                Log.d("test","ararara ${binding.etNumber.text.toString()}")
+                Log.d("test","editText ${binding.etNumber.text.toString()}")
                 if(binding.etNumber.text.isNullOrBlank()) {
                     recyclerView.adapter = CurrencyAdapter(hashMap, 0)
                 }
